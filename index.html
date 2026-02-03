@@ -12,52 +12,66 @@
     <h1>Desafio DIO HTML</h1>
     <hr>
 
-    <p>O HTML (HyperText Markup Language) é a espinha dorsal de qualquer página na web. Ele não é uma linguagem de programação, mas sim uma linguagem de marcação que diz ao navegador como estruturar o conteúdo. Sem o HTML, a internet como conhecemos não existiria, pois ele é o responsável por dar significado aos elementos que vemos na tela.</p>
+    <p>O <abbr title="HyperText Markup Language">HTML</abbr> é a espinha dorsal de qualquer página na web. Ele não é uma linguagem de programação, mas sim uma linguagem de marcação que diz ao navegador como estruturar o conteúdo. Sem o HTML, a internet como conhecemos não existiria.</p>
     
-    <p>Através dele, podemos definir o que é um título importante, onde começa um parágrafo e como inserir imagens que tornam a experiência do usuário mais rica. Este guia prático foi criado para documentar o aprendizado das tags fundamentais.</p>
+    <p>Este documento demonstra o uso de diversas tags, desde as fundamentais até as <del>obsoletas</del> <strong>versáteis</strong> que compõem a web moderna.</p>
 
     <h2 id="voltar">Índice</h2>
     <ul>
         <li><a href="#texto">Tags de Texto</a></li>
+        <li><a href="#formatação">Formatação Avançada</a></li>
         <li><a href="#listas-link">Lista e Links</a></li>
-        <li><a href="#midia">Mídia</a></li>
+        <li><a href="#exemplos">Níveis de Títulos</a></li>
     </ul>
 
-    <br><br><br><br><br><br><br><br><br><br>
+    <hr>
     
     <h2 id="texto">Tags de Texto</h2>
     <small><a href="#voltar"> < Voltar </a></small>
     
-    <p><strong>H1 a H6:</strong> Estas tags são fundamentais para a hierarquia da informação. O h1 é o título principal da página, aquele que resume todo o assunto tratado. Os níveis subsequentes (h2, h3, até h6) servem para organizar subtópicos dentro do conteúdo. É uma boa prática de SEO (otimização para motores de busca) ter apenas um h1 por página.</p>
+    <p><strong>Strong e I:</strong> A tag <strong>strong</strong> indica forte importância, enquanto a tag <i>i</i> é usada para termos técnicos ou pensamentos, geralmente resultando em itálico.</p>
     
-    <p><strong>P:</strong> A tag de parágrafo é a unidade básica de texto. Sempre que você desejar iniciar um novo bloco de ideias ou uma nova linha de raciocínio, deve envolver o texto na tag p. Isso garante que o navegador aplique o espaçamento correto entre os blocos.</p>
-    
-    <p><strong>Strong:</strong> Quando você deseja destacar uma palavra ou frase, a tag strong é a escolha ideal. <strong>Ela deixa o texto em negrito</strong>, mas seu propósito principal é semântico: ela avisa ao navegador e aos leitores de tela que aquele conteúdo tem uma importância maior ou urgência.</p>
-    
-    <p><strong>I:</strong> A tag i é utilizada para <i>deixar o texto em itálico</i>. Tradicionalmente, ela era usada apenas para fins visuais, mas hoje em dia é comum utilizá-la para termos estrangeiros, pensamentos ou termos técnicos que precisam de uma diferenciação visual sutil no corpo do texto.</p>
+    <p><mark>Esta frase está destacada com a tag mark</mark> para chamar a atenção imediata do leitor.</p>
 
-    <br><br><br><br><br><br><br><br><br><br> 
+    <blockquote>
+        "A marcação HTML bem feita é o primeiro passo para a acessibilidade digital."
+    </blockquote>
+
+    <br><br>
+    
+    <h2 id="formatação">Formatação Avançada</h2>
+    <small><a href="#voltar"> < Voltar </a></small>
+
+    <p>Podemos utilizar a tag <font color="blue" face="Arial">font (embora seja desencorajada no HTML5 moderno em favor do CSS)</font> para alterar estilos básicos diretamente.</p>
+    
+    <p>Na ciência, usamos muito <sub>subscrito</sub> (como em H<sub>2</sub>O) e <sup>sobrescrito</sub> (como em E=mc<sup>2</sup>).</p>
+    
+    <p>Para correções, usamos a tag <u>sublinhado</u> ou a tag <del>riscado (del)</del> para indicar algo que foi removido ou corrigido.</p>
+
+    <br><br>
+
     <h2 id="listas-link">Lista e Links</h2>
     <small><a href="#voltar"> < Voltar </a></small>
     
-    <p><strong>A (Âncora):</strong> Esta é a tag que conecta a web. Ela cria hiperlinks que podem levar o usuário para outros sites, para arquivos ou para pontos específicos da própria página, como fizemos no índice acima. O atributo "href" é obrigatório, pois indica o destino final do clique.</p> 
-    
-    <p><strong>UL:</strong> A lista não ordenada é usada quando a ordem dos itens não altera o sentido da informação. Por padrão, o navegador exibe esses itens com pequenos círculos (bullet points). É muito utilizada para criar menus de navegação e rodapés de sites.</p>   
-    
-    <p><strong>OL:</strong> Já a lista ordenada é numerada automaticamente pelo navegador (1, 2, 3...). Ela é perfeita para descrever processos, passos de uma receita ou qualquer conteúdo onde a sequência lógica seja obrigatória para o entendimento.</p>   
-    
-    <p><strong>LI:</strong> A tag li (List Item) é a peça fundamental das listas. Ela nunca deve estar solta no código; deve sempre estar contida dentro de uma tag ul ou ol para que a estrutura seja válida e compreensível pelo navegador.</p>
-    
-    <br><br><br><br><br><br><br><br><br><br> 
-    <h2 id="midia">Mídia</h2>
+    <p>As listas ordenadas ajudam a seguir processos:</p>
+    <ol>
+        <li>Planejar o conteúdo</li>
+        <li>Estruturar as tags</li>
+        <li>Validar o código</li>
+    </ol>
+
+    <br><br>
+
+    <h2 id="exemplos">Exemplos de Hierarquia</h2>
     <small><a href="#voltar"> < Voltar </a></small>
     
-    <p><strong>IMG:</strong> A tag de imagem permite que você dê vida visual ao seu projeto. Ela é uma das poucas tags que não possui fechamento (não existe um /img). Para que ela funcione, você precisa de dois atributos principais:</p>
-    
-    <ul>
-        <li><strong>SRC:</strong> Sigla para "source" (origem), onde você coloca o link ou o caminho da pasta onde a imagem está salva.</li>
-        <li><strong>ALT:</strong> Sigla para "alternative" (texto alternativo), que descreve o que está na imagem para pessoas com deficiência visual e ajuda o Google a entender o conteúdo da foto.</li>
-    </ul>
+    <h3>Este é um H3</h3>
+    <h4>Este é um H4</h4>
+    <h5>Este é um H5</h5>
+    <h6>Este é o menor nível de título (H6)</h6>
+
+    <hr>
+    <p align="center"><small>Desenvolvido para o Desafio DIO &copy; 2026</small></p>
 
 </body>
 
